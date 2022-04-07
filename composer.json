@@ -1,13 +1,26 @@
 {
-    "require": {
-        "doctrine/orm": "^2.11.0",
-        "doctrine/dbal": "^3.2",
-        "doctrine/annotations": "1.13.2",
-        "symfony/yaml": "^5.4",
-        "symfony/cache": "^5.4"
-    },
+    "name": "simplon/doctrine-orm",
     "autoload": {
-        "psr-0": {"": "src/entities/"}
-    }
-
+        "psr-4": {
+            "Simplon\\DoctrineOrm\\": "src/",
+            "App\\": "/"
+        }
+    },
+    "authors": [
+        {
+            "name": "assane",
+            "email": "assanesarrthiam99@gmail.com"
+        }
+    ],
+    
+        "require": {
+            "doctrine/orm": "^2.11.0",
+            "doctrine/dbal": "^3.2",
+            "doctrine/annotations": "1.13.2",
+            "symfony/yaml": "^5.4",
+            "symfony/cache": "^5.4"
+        }
+       
+    
+    
 }

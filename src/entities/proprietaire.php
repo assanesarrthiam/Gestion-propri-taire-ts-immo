@@ -34,12 +34,12 @@ class proprietaire
      * @var string
      */
     protected $Sexe;
-     /**
+    /**
      * @ORM\Column(type="string")
      * @var string
      */
     protected $Telephone;
-     /**
+    /**
      * @ORM\Column(type="string")
      * @var string
      */

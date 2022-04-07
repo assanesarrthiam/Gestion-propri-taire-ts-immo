@@ -1,8 +1,11 @@
 <?php
-class Proprietairedb
+namespace src\model;
+use libs\system\Model;
+class Proprietairedb extends Model
 {
-    public function add()
+    public function findAll()
     {
- echo 2;
+ return array("Proprietaire_Immeuble" ,"Proprietaire_Chambre") ;
     }
 }
+?>
