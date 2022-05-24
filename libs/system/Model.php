@@ -1,15 +1,14 @@
 <?php
 namespace libs\system;
-
-
 class Model
 {
-    protected $entityManager ;
+    protected $entityManager;
+    public function __construct()
+    {
+        require_once "bootstrap.php";
+        $this->entityManager=$entityManager;
+    }
+    
+}
 
-    public function __construct()  
-{
-require_once "bootStrap.php";
-$this->entityManager = $entityManager;
-}
-}
 ?>

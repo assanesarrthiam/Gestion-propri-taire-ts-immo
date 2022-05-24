@@ -2,13 +2,12 @@
 namespace libs\system;
 use libs\system\View;
 
-class Controller 
+class Controller
 {
     protected $view;
-
-    public function __construct()
-{
-    $this->view = new View();
+    public function __construct(){
+        $this->view=new View();
+    }
 }
 
-}
+?>

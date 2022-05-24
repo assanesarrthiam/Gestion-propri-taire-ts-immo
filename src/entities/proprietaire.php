@@ -1,82 +1,166 @@
 <?php
-// src/proprietaire.php
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * @ORM\Entity
  * @ORM\Table(name="proprietaire")
  */
-class proprietaire
-{
-    /**
+    class Proprietaire
+    {
+           /**
      * @ORM\Id
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue
-     * @var int
      */
-    protected $id;
-
-    /**
+        private $id_proprietaire;
+         /**
      * @ORM\Column(type="string")
-     * @var string
      */
-    protected $Nom;
-
-    /**
+        private $prenom;
+        
+         /**
      * @ORM\Column(type="string")
-     * @var string
      */
-    protected $Prenom;
-
-    /**
+        private $nom;
+        
+         /**
      * @ORM\Column(type="string")
-     * @var string
      */
-    protected $Sexe;
-    /**
+        private $civilite;
+                
+         /**
      * @ORM\Column(type="string")
-     * @var string
      */
-    protected $Telephone;
-    /**
+        private $dateNaissance;
+                
+         /**
      * @ORM\Column(type="string")
-     * @var string
      */
-    protected $CNI;
+        private $lieuNaissance;
+                
+         /**
+     * @ORM\Column(type="integer")
+     */
+        private $cni;
+                
+         /**
+     * @ORM\Column(type="string")
+     */
+        private $adresse;
+                
+         /**
+     * @ORM\Column(type="string")
+     */
+        private $nationalite;
+                
+         /**
+     * @ORM\Column(type="string")
+     */
+        private $contact;
+        
+     /**
+     * @ORM\Column(type="string")
+     */
+        private $email;
+      /**
+     * @ORM\Column(type="string")
+     */
+        private $password;
+        
+         
+        public function __construct(){
 
-    public function getId()
-    {
-        return $this->id;
-    }
+        }
 
-    public function setNom()
-    {
-        return $this->Nom;
-    }
+        
+        
+        public  function getId_proprietaire(){
+            return $this->id_proprietaire;
+        }
+        public  function setId_proprietaire($id_proprietaire){
+            $this->id_proprietaire=$id_proprietaire;
+        }
 
-    public function setDescription($Nom)
-    {
-        $this->Nom = $Nom;
-    }
+        public  function getPrenom(){
+            return $this->prenom;
+        }
+        public  function setPrenom($prenom){
+            $this->prenom=$prenom;
+        }
 
-    public function getPrenom()
-    {
-        return $this->Prenom;
-    }
+        public  function getNom(){
+            return $this->nom;
+        }
+        public  function setNom($nom){
+            $this->nom=$nom;
+        }
 
-    public function getSexe()
-    {
-        return $this->Sexe;
-    }
+        public  function getCivilite(){
+            return $this->civilite;
+        }
+        public  function setCivilite($civilite){
+            $this->civilite=$civilite;
+        }
 
-    public function setTelephone($Telephone)
-    {
-        $this->Telephone = $Telephone;
-    }
+        public  function getDateNaissance(){
+            return $this->dateNaissance;
+        }
+        public  function setDateNaissance($dateNaissance){
+            $this->dateNaissance=$dateNaissance;
+        }
 
-    public function getCNI()
-    {
-        return $this->CNI;
+        public  function getLieuNaissance(){
+            return $this->lieuNaissance;
+        }
+        public  function setLieuNaissance($lieuNaissance){
+            $this->lieuNaissance=$lieuNaissance;
+        }
+
+        public  function getCni(){
+            return $this->cni;
+        }
+        public  function setCni($cni){
+            $this->cni=$cni;
+        }
+
+        public  function getAdresse(){
+            return $this->adresse;
+        }
+        public  function setAdresse($adresse){
+            $this->adresse=$adresse;
+        }
+
+        public  function getNationalite(){
+            return $this->nationalite;
+        }
+        public  function setNationalite($nationalite){
+            $this->nationalite=$nationalite;
+        }
+
+        public  function getContact(){
+            return $this->contact;
+        }
+        public  function setContact($contact){
+            $this->contact=$contact;
+        }
+
+        public  function getEmail(){
+            return $this->email;
+        }
+        public  function setEmail($email){
+            $this->email=$email;
+        }
+
+        public  function getPassword(){
+            return $this->password;
+        }
+        public  function setPassword($password){
+            $this->password=$password;
+        }
+
     }
-}
+    
+
+?>
